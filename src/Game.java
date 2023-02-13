@@ -11,8 +11,8 @@ public class Game {
 
     private boolean isMoving;
     private int moves;
+    private char routeChar;
 
-    char routeChar;
     public Game(){
         this.gameArray = Maze.mazeArray;
         this.possibleMovesList = new ArrayList<>();
@@ -27,7 +27,6 @@ public class Game {
         if (((moves > 20) && (Maze.fileName.contains("first"))) || ((moves > 50) && (Maze.fileName.contains("second")))){
             System.out.println("Try to code more efficient algorithm!");
         }
-
     }
     public void firstAlgorithm(){
         while ((isMoving) && (!endPointFound)){
