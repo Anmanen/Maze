@@ -7,10 +7,10 @@ public class Game {
     private int[] locationPoint;
 
     private ArrayList<Integer> possibleMovesList;
-    boolean endPointFound;
+    private boolean endPointFound;
 
-    boolean isMoving;
-    int moves;
+    private boolean isMoving;
+    private int moves;
 
     char routeChar;
     public Game(){
